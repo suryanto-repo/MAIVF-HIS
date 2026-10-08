@@ -250,9 +250,12 @@ Deployment decisions should consider the intended use, clinical or operational r
 
 ## Citation
 
-A MethodsX manuscript describing MAIVF-HIS is currently under preparation.
+If you use MAIVF-HIS in your research, please cite the software as:
 
-Citation information will be updated following publication.
+> Nugroho, S., Ginardi, R. V. H., & Purnama, I. K. E. (2026).  
+> *Medical AI Validation Framework for Hospital Information Systems (MAIVF-HIS)* (Version 1.0.0) [Computer software].
+
+A persistent DOI will be added after the MAIVF-HIS v1.0.0 release is archived in Zenodo.
 
 ---
 
