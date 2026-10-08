@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Never commit hospital/patient datasets
+data/*.xlsx
+data/*.xls
+data/*.csv
+data/*.parquet
+
+# Generated validation outputs
+outputs/validation_report/*
+!outputs/validation_report/.gitkeep

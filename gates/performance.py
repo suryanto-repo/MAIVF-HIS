@@ -1,0 +1,9 @@
+import numpy as np
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+
+def regression_metrics(y_true,y_pred):
+    return {"MAE":mean_absolute_error(y_true,y_pred),"RMSE":np.sqrt(mean_squared_error(y_true,y_pred)),"R2":r2_score(y_true,y_pred)}
+
+def normalized_regression_score(reference,current):
+    cur=current["MAE"]
+    return 100.0 if cur<=0 else float(np.clip(100*reference["MAE"]/cur,0,100))

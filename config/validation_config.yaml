@@ -1,0 +1,23 @@
+framework:
+  name: MAIVF-HIS
+  version: "1.0.0"
+reproducibility:
+  random_seed: 42
+task:
+  type: regression
+  target: LOS
+model:
+  reference_model: Ridge
+  ridge_alpha: 10.0
+  hashing_features: 16384
+validation:
+  train_fraction: 0.80
+degradation:
+  D1_missingness: 0.05
+  D2_missingness: 0.10
+  D3_missingness: 0.20
+  D4_duplication: 0.05
+  D5_coding_noise: 0.05
+  D9_missingness: 0.10
+  D9_coding_noise: 0.05
+  D9_duplication: 0.05
